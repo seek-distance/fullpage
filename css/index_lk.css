@@ -864,10 +864,10 @@ a {
     height: 100%;
 }
 
-.bgImg{
+/* .bgImg{
     background: url('../img/bg-3.png');
     background-size: cover;
-}
+} */
 
 .clearfix:after {
     content: "";
