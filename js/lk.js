@@ -70,4 +70,11 @@ $(function() {
         });
         
     })
+
+    $('.form-left input[type="text"]').focus(function(){
+        $(this).addClass('focus');
+    })
+    $('.form-left input[type="text"]').blur(function(){
+        $(this).removeClass('focus');
+    })
 })
