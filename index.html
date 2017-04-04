@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/index_lk.css">
-    <script type="text/javascript" src="swfobject.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
@@ -42,15 +41,14 @@
                 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="IP/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="100%" height="100%">
                     <param name="movie" value="2bieshu_01.swf">
                     <param name="quality" value="high">
-                    <embed src="主页.swf"  id="myFlash"  quality="high" pluginspage="IP/go/getflashplayer" type="application/x-shockwave-flash" width="100%" height="100%"></embed>
+                    <embed src="主页.swf" id="myFlash" quality="high" pluginspage="IP/go/getflashplayer" type="application/x-shockwave-flash" width="100%" height="100%"></embed>
                 </object>
             </div>
             <img src="img/bg-3.png" style="z-index: 99;position: absolute;top: 134px;left:450px; ">
             <div class="container">
                 <a href="#page2">
                     <i class="fa fa-arrow-circle-o-down fr" style="position: absolute;bottom: 30px;left: 50%;font-size: 35px;color: #07a603;cursor: pointer;" aria-hidden="true"></i>
-                </a>             
-                
+                </a>
             </div>
         </section>
         <!--介绍切换区块-->
@@ -152,18 +150,18 @@
                                 if (i == 0) {
                                     $(".pageState_2").text("休闲度假");
                                     $(".pageState_2").css("color", "#07a603");
-                                    $('.picScroll-left .hd>a')[0].className='next';
-                                    $('.picScroll-left .hd>a')[1].className='prev';
+                                    $('.picScroll-left .hd>a')[0].className = 'next';
+                                    $('.picScroll-left .hd>a')[1].className = 'prev';
                                 } else if (i == 1) {
                                     $(".pageState_2").text("吃喝玩睡");
                                     $(".pageState_2").css("color", "#fe4571");
-                                    $('.picScroll-left .hd>a')[0].className='next next2';
-                                    $('.picScroll-left .hd>a')[1].className='prev prev2';
+                                    $('.picScroll-left .hd>a')[0].className = 'next next2';
+                                    $('.picScroll-left .hd>a')[1].className = 'prev prev2';
                                 } else {
                                     $(".pageState_2").text("我很文艺");
                                     $(".pageState_2").css("color", "#2698db");
-                                    $('.picScroll-left .hd a')[0].className='next next3';
-                                    $('.picScroll-left .hd>a')[1].className='prev prev3';
+                                    $('.picScroll-left .hd a')[0].className = 'next next3';
+                                    $('.picScroll-left .hd>a')[1].className = 'prev prev3';
                                 }
                             },
                         });
@@ -174,108 +172,394 @@
         </section>
         <!--推荐切换区块-->
         <section class="section page_2">
-            <div class="con_top" style="background-size:cover; background-position: center;background-repeat: no-repeat;">
-                <div class="banner" style="">
+            <!-- <div class="con_top" style="position: relative;">
+                <div class="page2BG" style="background: url(img/cp_0.png);display: block;"></div>
+                <div class="page2BG" style="background: url(img/cp_1.png);"></div>
+                <div class="page2BG" style="background: url(img/cp_2.png);"></div>
+                <div class="page2BG" style="background: url(img/cp_3.png);"></div>
+                <div class="page2BG" style="background: url(img/cp_4.png);"></div>
+                <div class="page2BG" style="background: url(img/cp_5.png);"></div>
+                <div class="banner">
                     <div id="slideBox" class="slideBox">
                         <div class="hd">
                             <ul>
-                                <li>星岩牌坊</li>
-                                <li>千年诗廊</li>
-                                <li>溶洞探奇</li>
-                                <li>仙湖泛舟</li>
-                                <li>仙林观鸟</li>
-                                <li>岩前美食</li>
+                                <li>星<span>岩牌</span>坊</li>
+                                <li>千<span>年诗</span>廊</li>
+                                <li>溶<span>洞探</span>奇</li>
+                                <li>仙<span>湖泛</span>舟</li>
+                                <li>仙<span>林观</span>鸟</li>
+                                <li>岩<span>前美</span>食</li>
                             </ul>
                         </div>
                         <div class="bd">
+                            <img src="img/map-bg.png" style="position: absolute; right: 0px;top: 0">
                             <ul>
                                 <li>
                                     <div class="text_info">
                                         <h3>七星岩牌坊 </h3>
                                         <p>七星岩牌坊坐落在肇庆市区中心，牌坊为一跨三门，牌楼正中由中华人民共和国元帅朱德题书“七星岩”三字。这里是七星岩景区南入口的标志。牌坊后是层次分明的远山近水，广场内有大型喷泉和演出舞台是重要的文化娱乐场地。牌坊内外是游客集散之处，在此既可观赏肇庆的城市风貌，又可观赏七星岩远近胜景。</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_2.png">
+                                        <img src="img/map1.png" style="right: 321px; top: 434px;">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text_info">
                                         <h3>千年诗廊</h3>
                                         <p>七星岩摩岩石刻为中国少有的庞大摩崖石刻群之一，它是岭南的骄傲，南国文化的瑰宝！七星岩摩崖石刻在七星岩面积不足1.5平方公里的崖壁上镌刻着上至唐朝下至现代的石刻题勒520多则，其内容丰富，刻工精细，石质幼结，字画完美，风格又有独到之处。诗词之间韵味浓厚为祖国灿烂文化增添了异彩，对于山河诗词有兴趣的游客都应该前来欣赏一番。</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_3.png">
+                                        <img src="img/map2.png" style="right: 237px; top: 173px;">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text_info">
                                         <h3>溶洞探奇</h3>
                                         <p>七星岩的溶洞多姿，形形式式各饶风趣，那色彩斑斓光怪陆离的自然景色千姿百态，实为稀奇，观赏中十分赏心悦目。其中七星岩的特色是最为罕见的是水洞，岩内有洞河中有湖，或是湖水荡漾，或是地下长河，水清见底，洞腹行舟，宛若海底晶宫。在洞中泛舟游览，能给与你不一样的奇妙体验。</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_4.png">
+                                        <img src="img/map3.png" style="right: 159px; top: 63px;">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text_info">
                                         <h3>仙湖泛舟</h3>
                                         <p>步行或坐在电瓶车上沿着十公里长的车道环湖一周时，鸟语花香，清风拂面，令人心旷神怡。水上泛舟更是快意悠悠，船在画中行，人在画中游，不亦乐乎?在仙女湖景区这里浪漫体验，能让你涤尽身心之尘，沾点仙界灵气！</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_1.png">
+                                        <img src="img/map4 5.png" style="right: 0px; top: 3px;">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text_info">
                                         <h3>仙林观鸟</h3>
                                         <p>丹顶鹤的故乡在遥远的齐齐哈尔，起保护的程度仅次于大熊猫。如果飞越背锅太远，就到七星岩啦！坐上游船游览遇湿地公园，沿途50多只丹顶鹤翩然起舞，150多只南非火烈鸟列队奔跑，还有过万的鸟群栖息无间。无论晨昏，站在观鸟台上眺望百鸟出林或归巢的情景，都是一大享受。</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_5.png">
+                                        <img src="img/map4 5.png" style="right: 0px; top: 3px;">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="text_info">
                                         <h3>岩前美食</h3>
                                         <p>享受生活，享受美食，在七星岩景区这里有一个背山面水的村庄，叫岩前村。曾经是一个充斥着大量大排档的不起眼的小乡村。如今，华丽转身，变成了一个文人雅士、青年创业者云集的地方，在这里美食与文艺兼备，成为肇庆旅游界冉冉升起的一颗明星。</p>
-                                        <a class="next_page" href="#page4">了解更多</a>
+                                        <a class="learn-more">了解更多</a>
                                     </div>
                                     <div class="text_map">
-                                        <img src="img/map_6.png">
+                                        <img src="img/map6.png" style="right: 29px; top: 133px;">
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                        下面是前/后按钮代码，如果不需要删除即可
                         <a class="prev" href="javascript:void(0)"></a>
                         <a class="next" href="javascript:void(0)"></a>
                     </div>
                     <script id="jsID" type="text/javascript">
                     jQuery(".slideBox").slide({
                         mainCell: ".bd ul",
-                        effect: "leftLoop",
+                        /*effect: "leftLoop",*/
                         easing: "easeInBack",
-
+            
                         endFun: function(i, c) {
-
+            
                             $(".scroll .scroll_con").eq(i).addClass("active").siblings().removeClass("active");
                             // $(".con_top").animate({"background":"url(img/cp_+"i"+.jpg)"});
-                            $(".con_top").css("background-image", "url(img/cp_" + i + ".png)");
-
+                            $(".page2BG").eq(i).fadeIn().siblings('.page2BG').fadeOut();
+            
                         }
-
+            
                     });
                     </script>
                 </div>
+            </div> -->
+
+            <div class="scroll">
+                <div class="scroll_top" style="position: relative;height: 100%;width: 100%;">
+                    <div class="page2BG" style="background: url(img/cp_0.png);display: block;"></div>
+                    <div class="page2BG" style="background: url(img/cp_1.png);"></div>
+                    <div class="page2BG" style="background: url(img/cp_2.png);"></div>
+                    <div class="page2BG" style="background: url(img/cp_3.png);"></div>
+                    <div class="page2BG" style="background: url(img/cp_4.png);"></div>
+                    <div class="page2BG" style="background: url(img/cp_5.png);"></div>
+                    <div class="banner">
+                        <div id="slideBox" class="slideBox">
+                            <div class="hd">
+                                <ul>
+                                    <li>星<span>岩牌</span>坊</li>
+                                    <li>千<span>年诗</span>廊</li>
+                                    <li>溶<span>洞探</span>奇</li>
+                                    <li>仙<span>湖泛</span>舟</li>
+                                    <li>仙<span>林观</span>鸟</li>
+                                    <li>岩<span>前美</span>食</li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <img src="img/map-bg.png" style="position: absolute; right: 0px;top: 0;">
+                                <ul>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>七星岩牌坊 </h3>
+                                            <p>七星岩牌坊坐落在肇庆市区中心，牌坊为一跨三门，牌楼正中由中华人民共和国元帅朱德题书“七星岩”三字。这里是七星岩景区南入口的标志。牌坊后是层次分明的远山近水，广场内有大型喷泉和演出舞台是重要的文化娱乐场地。牌坊内外是游客集散之处，在此既可观赏肇庆的城市风貌，又可观赏七星岩远近胜景。</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map1.png" style="right: 321px; top: 434px;">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>千年诗廊</h3>
+                                            <p>七星岩摩岩石刻为中国少有的庞大摩崖石刻群之一，它是岭南的骄傲，南国文化的瑰宝！七星岩摩崖石刻在七星岩面积不足1.5平方公里的崖壁上镌刻着上至唐朝下至现代的石刻题勒520多则，其内容丰富，刻工精细，石质幼结，字画完美，风格又有独到之处。诗词之间韵味浓厚为祖国灿烂文化增添了异彩，对于山河诗词有兴趣的游客都应该前来欣赏一番。</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map2.png" style="right: 237px; top: 173px;">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>溶洞探奇</h3>
+                                            <p>七星岩的溶洞多姿，形形式式各饶风趣，那色彩斑斓光怪陆离的自然景色千姿百态，实为稀奇，观赏中十分赏心悦目。其中七星岩的特色是最为罕见的是水洞，岩内有洞河中有湖，或是湖水荡漾，或是地下长河，水清见底，洞腹行舟，宛若海底晶宫。在洞中泛舟游览，能给与你不一样的奇妙体验。</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map3.png" style="right: 159px; top: 63px;">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>仙湖泛舟</h3>
+                                            <p>步行或坐在电瓶车上沿着十公里长的车道环湖一周时，鸟语花香，清风拂面，令人心旷神怡。水上泛舟更是快意悠悠，船在画中行，人在画中游，不亦乐乎?在仙女湖景区这里浪漫体验，能让你涤尽身心之尘，沾点仙界灵气！</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map4 5.png" style="right: 0px; top: 3px;">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>仙林观鸟</h3>
+                                            <p>丹顶鹤的故乡在遥远的齐齐哈尔，起保护的程度仅次于大熊猫。如果飞越背锅太远，就到七星岩啦！坐上游船游览遇湿地公园，沿途50多只丹顶鹤翩然起舞，150多只南非火烈鸟列队奔跑，还有过万的鸟群栖息无间。无论晨昏，站在观鸟台上眺望百鸟出林或归巢的情景，都是一大享受。</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map4 5.png" style="right: 0px; top: 3px;">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="text_info">
+                                            <h3>岩前美食</h3>
+                                            <p>享受生活，享受美食，在七星岩景区这里有一个背山面水的村庄，叫岩前村。曾经是一个充斥着大量大排档的不起眼的小乡村。如今，华丽转身，变成了一个文人雅士、青年创业者云集的地方，在这里美食与文艺兼备，成为肇庆旅游界冉冉升起的一颗明星。</p>
+                                            <a class="learn-more">了解更多</a>
+                                        </div>
+                                        <div class="text_map">
+                                            <img src="img/map6.png" style="right: 29px; top: 133px;">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                            <a class="prev" href="javascript:void(0)"></a>
+                            <a class="next" href="javascript:void(0)"></a>
+                            <a class="close" href="javascript:void(0)"></a>
+                        </div>
+                        <script id="jsID" type="text/javascript">
+                        jQuery(".slideBox").slide({
+                            mainCell: ".bd ul",
+                            /*effect: "leftLoop",*/
+                            easing: "easeInBack",
+                
+                            endFun: function(i, c) {
+                
+                                $(".scroll .scroll_con").eq(i).addClass("active").siblings().removeClass("active");
+                                // $(".con_top").animate({"background":"url(img/cp_+"i"+.jpg)"});
+                                $(".page2BG").eq(i).fadeIn().siblings('.page2BG').fadeOut();
+                
+                            }
+                
+                        });
+                        </script>
+                    </div>
+                </div>
+                <div class="more" style="display: none;">
+                    <div class="container">
+                        <div class="scroll_con con_1 clearfix">
+                            <div class="text_top clearfix">
+                                <div class="con_text text_1 fr">
+                                    <h3>广场漫步，悠游体验</h3>
+                                    <p>七星岩牌坊设计的色调是红色、绿色、天蓝色，基本格局是奔放、热情、开朗。如肇庆人民的待客之道，给旅客留下难忘的印象。七星岩牌坊就是肇庆的一座城雕，巍然屹立在市中心。繁忙过后，肇庆人们都喜欢在牌坊广场这里驻足长立观看星湖美景，或聚首话旧谈笑风生，或呼朋唤友欢乐玩闹。白天的牌坊气宇轩昂，肃穆庄严；晚上，霓虹灯金光闪闪，异彩纷呈。</p>
+                                </div>
+                                <div class="con_text text_2 fl">
+                                    <img src="img/pic_4.png">
+                                </div>
+                            </div>
+                            <div class="text_top clearfix">
+                                <div class="con_text text_1 fl">
+                                    <h3>广场漫步，悠游体验</h3>
+                                    <p>七星岩牌坊设计的色调是红色、绿色、天蓝色，基本格局是奔放、热情、开朗。如肇庆人民的待客之道，给旅客留下难忘的印象。七星岩牌坊就是肇庆的一座城雕，巍然屹立在市中心。繁忙过后，肇庆人们都喜欢在牌坊广场这里驻足长立观看星湖美景，或聚首话旧谈笑风生，或呼朋唤友欢乐玩闹。白天的牌坊气宇轩昂，肃穆庄严；晚上，霓虹灯金光闪闪，异彩纷呈。</p>
+                                </div>
+                                <div class="con_text text_2 fr">
+                                    <img src="img/pic_5.jpg">
+                                </div>
+                            </div>
+                            <div class="text_bottom clearfix">
+                                <div class="con_text text_1 fr">
+                                    <p>新音乐喷泉是漂浮式湖中大型音乐喷泉，喷泉的水型和灯光的组合效果有几百种之多！其变化多端、梦幻无尽、色彩斑斓的效果堪称亚洲第一！</p>
+                                </div>
+                                <div class="con_text text_2 fl">
+                                    <img src="img/pic_6.jpg">
+                                </div>
+                            </div>
+                            <div class="text_bottom_2 clearfix">
+                                <div class="con_text text_1 fl">
+                                    <h3>文艺汇演，精神文明</h3>
+                                    <p>牌坊广场文艺演出活动展示肇庆市精神文明，丰富市民文化生活。牌坊广场舞台的歌舞演出每周六一场，逢节日加演一至三场。牌坊广场舞台成为肇庆市民和游客欣赏、展示与参与文艺活动的广阔舞台。</p>
+                                </div>
+                                <div class="con_text text_2 fr">
+                                    <img src="img/pic_7.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_con con_2 clearfix">
+                            <div class="con_text text_1">
+                                <div class="text_top clearfix">
+                                    <div class="con_text text_1 fr">
+                                        <h3>壮阔河山，民生写照</h3>
+                                        <p>这里有我们国家元勋们的题咏，如叶剑英、朱德、陈毅、郭沫若等人的诗歌，书法之秀逸，精美绝伦。星岩石刻中，无媚俗的文字，更无虚伪的内容；石刻中以诗歌为最，大多描写风景，人间的真善美，足以观赏者回味及深思。石刻的书法集各路书法家之大成，如前代的李邕、陈白沙、黎二樵、冯敏昌；现代的郭沫若、吴子复、秦萼生等书法大家，各写春秋，尽其风流。真不愧是“名迹耀南中”。</p>
+                                    </div>
+                                    <div class="con_text text_2 fl">
+                                        <img src="img/pic_10.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="con_text text_2">
+                                <div class="text_left">
+                                    <h3>摩崖刻字，字字千金</h3>
+                                    <p>一块尺幅大的摩崖，要花上一百多两白银的工钱才能完成水磨、覆、印、雕刻等工序。即使是一寸见方的小字，每字的刻工款在清代大约要二钱白银。据清人笔记描述：每字的雕刻工钱为白银一两二钱，另附加茶资等。
+                                    </p>
+                                    <div class="pic_1">
+                                        <img src="img/pic_8.jpg">
+                                    </div>
+                                </div>
+                                <div class="text_right">
+                                    <img src="img/pic_9.jpg">
+                                    <p>可见，七星岩这么庞大摩崖石刻群的费资，是何等的令人咋舌！七星岩摩岩石刻称为千年诗廊，当之无愧。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_con con_3 clearfix">
+                            <div class="con_text text_1">
+                                <h3>奇特石洞，引人入胜</h3>
+                                <p>石室洞在七星岩诸洞中开辟最早，景物也最多。唐李邕的《端州石室记》具体描写他进洞后的感受。石室洞穹窿高大，东有黑岩水洞，西通碧霞洞，北连璇玑台莲花洞，千百年来，多姿多彩的景物，给人们开辟了如梦如幻的神话世界。</p>
+                                <div class="pic_1">
+                                    <img src="img/pic_11.jpg">
+                                </div>
+                            </div>
+                            <div class="con_text text_2">
+                                <div class="text_left">
+                                    <h3>洞腹行舟，趣味相投</h3>
+                                    <p>看到许许多多的神秘钟乳岩，在视觉上已经给人无比震撼，但如果能行舟洞中观看，又是如何的一番景象？在这里，你可以与你友人坐在小舟上，顺着水流，观看两岸的奇景，是不是又别致得多~
+                                    </p>
+                                    <div class="pic_1">
+                                        <img src="img/pic_12.jpg">
+                                    </div>
+                                </div>
+                                <div class="text_right">
+                                    <img src="img/pic_13.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_con con_4 clearfix">
+                            <div class="con_text text_1">
+                                <h3>仙湖泛舟，遨游自然</h3>
+                                <p>当您乘坐游船进入仙女湖，就会被眼前的美景所陶醉。20多个小岛如翡翠般镶嵌点缀在碧绿的湖水中，18个主要湿地景观如珍珠般洒落在清澈的湖泊里。这里，碧幽绝尘、清雅绝俗、灌木满岛、景观奇绝。古朴、野趣、原生态。犹如人间仙境。</p>
+                                <div class="pic_1">
+                                    <img src="img/pic_1.jpg">
+                                </div>
+                            </div>
+                            <div class="con_text text_2">
+                                <div class="text_left">
+                                    <h3>天公造物，卧佛含丹</h3>
+                                    <p>仙女湖湖畔有一处独特的景观，就是“卧佛含丹”，“卧佛”是一象形地貌，由七星岩的数座山峰、山岗组成，形似仰卧的睡佛之景，眼、耳、口鼻、下巴等清晰可见。每年清明、中秋前后的晴天，夕阳沿卧佛的嘴部徐徐而落下，形成了“卧佛含丹”的自然奇观。
+                                    </p>
+                                    <div class="pic_1">
+                                        <img src="img/pic_3.jpg">
+                                    </div>
+                                </div>
+                                <div class="text_right">
+                                    <img src="img/pic_2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_con con_5 clearfix">
+                            <div class="con_text text_1">
+                                <h3>处身鸟巢，与鸟共鸣</h3>
+                                <p>七星岩景区的湿地公园有众多的飞禽鸟类，现有鸟类188种，其中有中国著名文化鸟“湿地之神”——丹顶鹤，还有亭亭玉立的宫廷美女——火烈鸟等，种类多不胜数。在这里你能看各种鸟类编队群飞，是观鸟爱自然的游客不二之选。</p>
+                                <div class="pic_1">
+                                    <img src="img/pic_14.jpg">
+                                </div>
+                            </div>
+                            <div class="con_text text_2 clearfix">
+                                <p>仙女湖以其优良的环境和风声的水植物及鱼类资源，让丹顶鹤在这安居落户。近观丹顶鹤，猴颊和颈部暗褐，顶红毛白，翘首企望的时候神态自得，看着它，你就会明白何为“鹤立鸡群”，而展翅飞舞时，体态飘逸，伴随着声声鹤鸣，叫人心驰神往。 来自南非的火烈鸟、苍鹭、夜鹭、小白鹭等，都是丹顶鹤的邻居。品类繁多的鸟类分布在湖边、沼泽、浅滩和猫咪的水杉林。日落时分，坐上归途船，经过鸟岛，过万只鹭鸟或成群翱翔或在树枝栖息，四周是草地翠绿，水草青青，能不让人感觉到生物与自然之间的和谐安宁吗？
+                                </p>
+                                <div class="pic_1 fl">
+                                    <img src="img/pic_15.jpg">
+                                </div>
+                                <div class="pic_2 fr">
+                                    <img src="img/pic_16.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_con con_1 con_6 clearfix">
+                            <div class="text_top clearfix">
+                                <div class="con_text text_1 fl">
+                                    <h3>怀古叙今，艺术天堂</h3>
+                                    <p>岩前村内较好地保存了宗祠、古建筑以及明清时期的岭南村落格局，这便吸引了艺术家的创作，岩前村的濒水栈道，村中的古巷，也吸引了游客的休闲活动。</p>
+                                </div>
+                                <div class="con_text text_2 fr">
+                                    <img src="img/pic_17.jpg">
+                                </div>
+                            </div>
+                            <div class="text_top text_top_6 clearfix" style="margin-bottom:10px;">
+                                <div class="con_text text_1 fl">
+                                    <h3>精心选造，小资生活</h3>
+                                    <p>在景区的酒店里不管你是坐在落地窗前的茶桌前，坐在开满鲜花的凉台上，泡在窗前的浴缸里，也可盘着腿坐在窗前的榻榻米上；或独坐或三两朋友，或喝茶聊天，或欣赏湖光山色，或端一杯红酒，静静的看着湖里跳起的鱼儿惊起湖水泛起一圈圈涟漪，享受着慢生活。</p>
+                                </div>
+                                <div class="con_text text_2 fr">
+                                    <img src="img/pic_18.jpg">
+                                </div>
+                            </div>
+                            <div class="text_top text_top_6 clearfix">
+                                <div class="con_text text_1 fr">
+                                    <p>在景区的酒店里不管你是坐在落地窗前的茶桌前，坐在开满鲜花的凉台上，泡在窗前的浴缸里，也可盘着腿坐在窗前的榻榻米上；或独坐或三两朋友，或喝茶聊天，或欣赏湖光山色，或端一杯红酒，静静的看着湖里跳起的鱼儿惊起湖水泛起一圈圈涟漪，享受着慢生活。</p>
+                                </div>
+                                <div class="con_text text_2 fl">
+                                    <img src="img/pic_19.jpg">
+                                </div>
+                            </div>
+                            <div class="text_top text_top_6 clearfix">
+                                <div class="con_text text_1 fl">
+                                    <h3>花样百出，吃货最爱</h3>
+                                    <p>高脚杯里斟上红酒，玻璃杯里盛满柠檬水，一道道美食上桌，你就慢慢的享用吧。如果你吃腻了中西正餐，那么这里还有各种各式的特色菜，来尝尝吧！这条悠闲有品味的文艺范十足的街道足以让你开怀大乐！</p>
+                                </div>
+                                <div class="con_text text_2 fr">
+                                    <img src="img/pic_20.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <!--推荐内容区块-->
-        <section class="section s_con">
+        <!-- <section class="section s_con">
             <div class="scroll">
                 <div class="container">
                     <div class="scroll_con con_1 active">
@@ -447,7 +731,7 @@
                     <img src="img/bottom_1.png" />
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--景区动态-->
         <section class="section huodong">
             <div class="container">

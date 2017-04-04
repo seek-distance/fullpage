@@ -1,15 +1,20 @@
 @font-face {
-    font-family: 'FZSongKeBenXiuKaiS';
+    font-family: 'FZSKBXk'; 
     src: url("../fonts/FZSongKeBenXiuKaiS.woff") format("woff"), /*现代浏览器*/
-    url("../fonts/FZSongKeBenXiuKaiS.ttf") format("truetype"), /*Safari,Android,iOS*/
+    url("../fonts/方正宋刻本秀楷简体.ttf") format("truetype"), /*Safari,Android,iOS*/
     url("../fonts/FZSongKeBenXiuKaiS.otf") format("otf");
 }
 @font-face {
     font-family: 'FZLTHJW';
-    src:url("../fonts/[FZLTHJW].ttf") format("truetype"),
+    src:url("../fonts/兰亭黑 GBK.ttf") format("truetype"),
+}
+@font-face {
+    font-family: 'FZLTZH';
+    src:url("../fonts/方正兰亭中黑_GBK.ttf") format("truetype"),
 }
 *{
     box-sizing: border-box;
+    font-family: FZLTHJW
 }
 body {
     margin: 0;
@@ -94,6 +99,8 @@ a {
     padding: 0px 5px;
     transition: all 0.5s;
     line-height: 30px;
+    font-family: FZLTHJW;
+    font-weight: bold;
 }
 
 .nav li:hover {
@@ -221,7 +228,8 @@ a {
 
 .js_tit p {
     font-size: 18px;
-    color: #333;
+    color: #0a4443;
+    line-height: 25px;
     font-family: "FZLTHJW";
 }
 
@@ -398,7 +406,7 @@ a {
 
 .banner {
     width: 1320px;
-    height: 710px;
+    height: 720px;
     background: url(../img/c_bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -417,7 +425,6 @@ a {
 .slideBox {
     width: 1220px;
     height: 610px;
-    overflow: hidden;
     position: relative;
 }
 
@@ -425,31 +432,46 @@ a {
     overflow: hidden;
     position: absolute;
     right: 5px;
-    bottom: 5px;
+    bottom: -20px;
     z-index: 1;
 }
 
 .slideBox .hd ul {
     overflow: hidden;
     zoom: 1;
-    float: left;
+    border-bottom: 1px solid #e0e3e3;
 }
 
 .slideBox .hd ul li {
     float: left;
     margin-right: 2px;
-    line-height: 14px;
+    line-height: 28px;
     text-align: center;
     color: #b8b8b8;
     cursor: pointer;
     font-size: 14px;
     margin-left: 10px;
     padding: 5px;
+    font-family: FZLTHJW
+}
+
+.slideBox .hd ul li:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.slideBox .hd ul li:last-child{
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .slideBox .hd ul li.on {
     color: #333;
-    border-bottom: 2px solid #07a603;
+}
+
+.slideBox .hd ul li.on span{
+    padding-bottom: 9px;
+    border-bottom: 3px solid #07a603;    
 }
 
 .slideBox .bd {
@@ -467,23 +489,29 @@ a {
 /* 下面是前/后按钮代码，如果不需要删除即可 */
 
 .slideBox .prev,
+.slideBox .close,
 .slideBox .next {
     position: absolute;
     display: block;
     width: 45px;
     height: 37px;
+    bottom: -20px;
 }
 
 .slideBox .next {
-    top: 90%;
     left: 50px;
     background: url(../img/j_next.png) no-repeat center;
 }
 
 .slideBox .prev {
-    top: 90%;
     left: 0px;
     background: url(../img/j_prev.png) no-repeat center;
+}
+
+.slideBox .close {
+    display: none;
+    left: 26px;
+    background: url(../img/j_close.png) no-repeat center;
 }
 
 .slideBox .prev:hover {
@@ -503,10 +531,11 @@ a {
 }
 
 .text_info {
-    width: 600px;
+    width: 580px;
     float: left;
     margin-right: 10px;
     margin-top: 110px;
+    font-family: FZLTHJW;
 }
 
 .text_map {
@@ -520,8 +549,7 @@ a {
 }
 
 .text_map img {
-    width: 600px;
-    height: 559px;
+    position: absolute;
 }
 
 .text_info h3 {
@@ -531,15 +559,20 @@ a {
 }
 
 .text_info p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin-top: 20px;
+    line-height: 30px;
+    color: #131313;
+    font-family: FZLTHJW;
 }
 
 .text_info a {
     padding: 4px 9px;
-    background: #07a603;
-    color: #fff;
+    background: #fff;
+    color: #333;
+    border: 1px solid #07a603;
+    border-radius: 3px;
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
@@ -547,13 +580,17 @@ a {
     cursor: pointer;
 }
 
+.text_info a:hover{
+    color: #fff;
+    background-color: #07a603;
+}
+
 .s_con {}
 
 .scroll {
     width: 100%;
-    height: 780px;
+    height: 100%;
     overflow-y: scroll;
-    padding-top: 200px;
 }
 
 .s_con .container {
@@ -572,6 +609,7 @@ a {
     line-height: 25px;
     color: #131313;
     margin-top: 30px;
+    font-family: FZSKBXk;
 }
 
 .pic_1 {
@@ -890,6 +928,22 @@ a {
     opacity: 1;
     display: block;
 }
+.page2BG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-size:cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.scroll .container{
+    background: url('../img/detailbg.png');
+    background-size: 100% 100%;
+    padding:220px 350px;
+}
+
 
 @keyframes fadeIn {
     from {

@@ -34,64 +34,15 @@ $(function() {
     $('#dowebok').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 
-        afterLoad: function(anchorLink, index) {
-            if (index == 1) {
-                $.fn.fullpage.setAllowScrolling(true);
-            }
-            if (index == 2) {
-                $.fn.fullpage.setAllowScrolling(true);
-            }
+    /*    afterLoad: function(anchorLink, index) {
             if (index == 3) {
+            	$.fn.fullpage.setAllowScrolling(false);
+            }else{
                 $.fn.fullpage.setAllowScrolling(true);
             }
-            if (index == 4) {
-            	$.fn.fullpage.setAllowScrolling(false);
-                var scrollHeight = $(".scroll").height();
-            	$(".scroll").scroll(function() {
-                    var top = $(".scroll").scrollTop();
-
-                    if (top >= scrollHeight || top<=0) {
-                        $.fn.fullpage.setAllowScrolling(true);
-                    }
-
-
-                });
-                /*var scrollHeight = $(".scroll").height();
-                $(".scroll").scroll(function() {
-                    var top = $(".scroll").scrollTop();
-                    if (top > 100) {
-                        $.fn.fullpage.setAllowScrolling(false);
-                    }
-
-                    if (top >= 750) {
-                        $.fn.fullpage.setAllowScrolling(true);
-                    }
-
-
-                });*/
-
-
-
-            }
-        },
+        },*/
         onLeave: function(index, direction) {
-            if (index == '2') {}
-            if (index == '3') {
-
-            }
-            if (index == '4') {
-                /*var scrollHeight = $(".scroll").height();
-                $(".scroll").scroll(function() {
-
-                    var top = $(".scroll").scrollTop();
-                    if (top <= 100) {
-                        $.fn.fullpage.setAllowScrolling(true);
-                    }
-
-                });*/
-            }
-
-
+            
         }
     });
 
@@ -104,13 +55,19 @@ $(function() {
     });
 
 
-
-   /* $('.nav_btn i').mouseenter(function(){
-    	$(this).fadeOut();
-    	$('.nav_btn ul').fadeIn();
+    $('.learn-more').click(function(){
+        $.fn.fullpage.setAllowScrolling(false);
+        $('.close').fadeIn().siblings('a').fadeOut();
+        $('.more').show();
+        $('.scroll_con').eq($(this).parents('li').index()).addClass('active').siblings().removeClass('active');
+        $('.scroll').animate({'scrollTop':500},1000);
     })
-    $('.nav_btn').mouseleave(function(){
-    	$('.nav_btn ul').fadeOut();
-    	$('.nav_btn i').fadeIn();
-    })*/
+    $('.close').click(function(){        
+        $('.scroll').animate({'scrollTop':0},1000,function(){
+            $('.close').fadeOut().siblings('a').fadeIn();
+            $('.more').hide();
+            $.fn.fullpage.setAllowScrolling(true);
+        });
+        
+    })
 })
