@@ -1048,11 +1048,15 @@ a {
 .form-left button:hover{
     background: #059001;
 }
-.form-left select{
+.form-left .select{
     border: 1px solid #c3c3c3;
+    width: 95px;
+    padding-right: 5px;
+}
+.form-left select{
     background: url('../img/select.png') no-repeat right center;
     height: 36px;
-    width: 95px;
+    width: 90px;
     margin-right: 10px;
     padding-left: 8px;
     color: #ccc;

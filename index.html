@@ -175,12 +175,12 @@
 
             <div class="scroll">
                 <div class="scroll_top" style="position: relative;height: 100%;width: 100%;">
-                    <div class="page2BG" style="background: url(img/cp_0.png);display: block;"></div>
-                    <div class="page2BG" style="background: url(img/cp_1.png);"></div>
-                    <div class="page2BG" style="background: url(img/cp_2.png);"></div>
-                    <div class="page2BG" style="background: url(img/cp_3.png);"></div>
-                    <div class="page2BG" style="background: url(img/cp_4.png);"></div>
-                    <div class="page2BG" style="background: url(img/cp_5.png);"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_0.png);display: block;"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_1.png);"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_2.png);"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_3.png);"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_4.png);"></div>
+                    <div class="page2BG" style="background-image: url(img/cp_5.png);"></div>
                     <div class="banner">
                         <div id="slideBox" class="slideBox">
                             <div class="hd">
@@ -867,15 +867,21 @@
                             </li>
                             <li class="clearfix">
                                 <span class="fl left">旅客结束</span>
-                                <select class="fl" style="width: 132px;">
-                                    <option value="">年</option>
-                                </select>
-                                <select class="fl">
-                                    <option value="">月</option>
-                                </select>
-                                <select class="fl">
-                                    <option value="">日</option>
-                                </select>
+                                <div class="select fl">
+                                    <select style="width: 132px;">
+                                        <option value="">年</option>
+                                    </select>
+                                </div>
+                                <div class="select fl">
+                                    <select>
+                                        <option value="">月</option>
+                                    </select>
+                                </div>                                
+                                <div class="select fl">
+                                    <select>
+                                        <option value="">日</option>
+                                    </select>
+                                </div>                                
                             </li>
                             <li class="clearfix drive">
                                 <span class="fl left">是否自驾</span>
