@@ -26,8 +26,8 @@
                         <li><a href="#page1">网站首页</a><span> </span></li>
                         <li><a href="#page2">景点简介</a><span> </span></li>
                         <li><a href="#page3">景点推荐</a><span> </span></li>
-                        <li><a href="#page5">最新活动</a><span> </span></li>
-                        <li><a href="#">预约游玩</a></li>
+                        <li><a href="#page4">最新活动</a><span> </span></li>
+                        <li><a href="#page5">预约游玩</a></li>
                     </ul>
                     <i class="navicon" style="background: url(img/bar.png);display: block;width: 36px;height: 23px;float: right;" aria-hidden="true"></i>
                 </div>
@@ -75,64 +75,64 @@
                                     <li>
                                         <div class="pic"><img src="img/pic3.png" /></div>
                                         <div class="title">
-                                            <p class="color_1">登高望远</p>
-                                            在七星岩游玩登高山观美景是必不可少啦，徒步山路风高气爽，目不暇接的各种美景，能为你的旅程增添不少乐趣。</div>
+                                            <img src="img/green1.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/pic2.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_2">溶洞探奇</p>
-                                            外表秀丽的七星岩内有乾坤，纯天然形成的溶洞，穹隆高大，千姿百态，如梦如幻的景观，一起来探个底吧。</div>
+                                            <img src="img/green2.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/pic1.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_3">星湖泛舟</p>
-                                            在美丽的仙女湖上泛舟游玩，观看神奇的“卧佛含丹”，途中各种罕见的珍稀鸟类伴你同行，幸福感油然而生。</div>
+                                            <img src="img/green3.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/s1.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_1">岩前美食</p>
-                                            逛完秀丽的景点这时候，需要的就是大吃一顿。在岩前村这里各种特色餐馆必能让你饱腹一番。 </div>
+                                            <img src="img/pink1.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/s2.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_2">购物之娱</p>
-                                            购物天堂无处不在，当然在七星岩这里你也能看到。周边能买到各种特色手信礼品，另外还有各种大牌，定能满足你的购物欲。</div>
+                                            <img src="img/pink2.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/s3.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_3">安枕无忧 </p>
-                                            作为有名度假景区，这里的酒店老板也是耐心为各旅客安排了温馨的客房，各种不同设计风格的房间，都能让你眼前一亮。</div>
+                                            <img src="img/pink3.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/w1.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_1">亲近自然 </p>
-                                            文艺青年当然会与大自然挂钩，形形色色的大自然美景，与你在一起肯定会更合拍。</div>
+                                            <img src="img/blue1.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/w2.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_2">与鹤共舞 </p>
-                                            七星岩景区仙女湖一带，是著名的“鸟巢”在这里有各种珍稀的鸟类，其中丹顶鹤就作为景区贵族之一，赶紧过来看看吧！</div>
+                                            <img src="img/blue2.png">
+                                        </div>
                                     </li>
                                     <li>
                                         <div class="pic"><img src="img/w3.png" /></a>
                                         </div>
                                         <div class="title">
-                                            <p class="color_3">大背景墙 </p>
-                                            游玩当然是要拍照留念，七星岩景区内，处处美景随时都能作为你忠实的背景墙，为你的旅行留下难忘的片刻。</div>
+                                            <img src="img/blue3.png">
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -266,10 +266,11 @@
                         <script id="jsID" type="text/javascript">
                         jQuery(".slideBox").slide({
                             mainCell: ".bd ul",
-                            /*effect: "leftLoop",
-                            easing: "easeInBack",*/
+                            effect: "fold",
+                            delayTime:1000,
+                            /*easing: "easeInBack",*/
                 
-                            endFun: function(i, c) {
+                            startFun: function(i, c) {
                 
                                 $(".scroll .scroll_con").eq(i).addClass("active").siblings().removeClass("active");
                                 // $(".con_top").animate({"background":"url(img/cp_+"i"+.jpg)"});
@@ -855,21 +856,27 @@
                             </li>
                             <li class="clearfix">
                                 <span class="fl left">旅客开始</span>
-                                <select class="fl" style="width: 132px;">
-                                    <option value="">年</option>
-                                </select>
-                                <select class="fl">
-                                    <option value="">月</option>
-                                </select>
-                                <select class="fl">
-                                    <option value="">日</option>
-                                </select>
+                                <div class="select fl" style="width: 132px;">
+                                    <select style="width: 125px;">
+                                        <option value="">2017</option>
+                                    </select>
+                                </div>
+                                <div class="select fl">
+                                    <select>
+                                        <option value="">月</option>
+                                    </select>
+                                </div>                                
+                                <div class="select fl">
+                                    <select>
+                                        <option value="">日</option>
+                                    </select>
+                                </div>  
                             </li>
                             <li class="clearfix">
                                 <span class="fl left">旅客结束</span>
-                                <div class="select fl">
-                                    <select style="width: 132px;">
-                                        <option value="">年</option>
+                                <div class="select fl" style="width: 132px;">
+                                    <select style="width: 125px;">
+                                        <option value="">2017</option>
                                     </select>
                                 </div>
                                 <div class="select fl">
@@ -934,6 +941,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="bm">
+                    <a href="#">开始旅途</a>
                 </div>
             </div>
         </section>
