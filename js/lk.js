@@ -77,4 +77,9 @@ $(function() {
     $('.form-left input[type="text"]').blur(function(){
         $(this).removeClass('focus');
     })
+
+    $('.btnMore li').click(function(){
+        $('.number').val($(this).text());
+    })
+
 })
