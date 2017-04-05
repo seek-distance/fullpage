@@ -1106,14 +1106,16 @@ a {
 .form-right>p{
     line-height: 30px;
     margin:0 0 8px 12px;
+    font-weight: bold;
 }
 .form-right .item{
     height: 206px;
     margin-bottom: 15px;
     background: #f0f6f6;
     margin-left: 12px;
-    line-height: 25px;
-    font-size: 16px;
+    line-height: 17px;
+    font-size: 15px;
+    padding-bottom: 5px;
 }
 .form-right .item p{
     text-align: center;
@@ -1134,7 +1136,7 @@ a {
     background-size: 100% 100%;
     outline: none;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* radio改写 */
