@@ -6,12 +6,12 @@
 }
 @font-face {
     font-family: 'FZLTHJW';
-    src:url("../fonts/FZLTHJW.ttf") format("truetype"),
+    src:url("../fonts/FZLTHJW.TTF") format("truetype"),
     url("../fonts/FZLTHJW.woff") format("woff");
 }
 @font-face {
     font-family: 'FZLTZH';
-    src:url("../fonts/方正兰亭中黑_GBK.ttf") format("truetype"),
+    src:url("../fonts/方正兰亭中黑_GBK.TTF") format("truetype"),
     url("../fonts/FZLTZHK.woff") format("woff");
 }
 select {
