@@ -34,13 +34,14 @@ $(function() {
     $('#dowebok').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 
-    /*    afterLoad: function(anchorLink, index) {
-            if (index == 3) {
+        afterLoad: function(anchorLink, index) {
+            //$.fn.fullpage.setAllowScrolling(false);
+            /*if (index == 3) {
             	$.fn.fullpage.setAllowScrolling(false);
             }else{
                 $.fn.fullpage.setAllowScrolling(true);
-            }
-        },*/
+            }*/
+        },
         onLeave: function(index, direction) {
             
         }
